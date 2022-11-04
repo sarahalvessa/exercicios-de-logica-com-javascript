@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Lógica de Programação com Javascript</title>
+</head>
+<body>
+    <!-- Efetuar o cálculo da quantidade de litros de combustível gasta em uma viagem, utilizando um automóvel que faz 12 Km por litro. Para obter o cálculo, o usuário deve fornecer o tempo gasto  -->
+    <script>
+        let tempo = prompt("Digite o tempo em horas");
+        tempo = parseInt(tempo);
+
+        let velocidade = prompt("Digite a velocidade");
+        velocidade = parseInt(velocidade)
+
+        let distancia = tempo *  velocidade;
+
+        let litrosusados = distancia / 12;
+
+        alert("Velocidade: " + velocidade  + " KM/h" + " Tempo: " + tempo + " Horas" + " Distância: " + distancia + " KM" + " Litros usados: " + litrosusados.toFixed(2) + " Litros");
+    </script>
+</body>
+</html>

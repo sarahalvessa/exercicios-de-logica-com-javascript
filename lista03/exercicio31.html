@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Lógica de Programação com Javascript</title>
+</head>
+<body>
+    <!-- Em uma eleição sindical concorreram ao cargo de presidente três candidatos (A, B e C). Durante a apuração dos votos foram computados votos nulos e votos em branco, além dos votos válidos para cada candidato. Deve ser criado um programa de computador que efetue a leitura da quantidade de votos válidos para cada candidato, além de efetuar também a leitura da quantidade de votos nulos e votos em branco. Ao final o programa deve apresentar o número total de eleitores, considerando votos válidos, nulos e em branco; o percentual correspondente de votos válidos em relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato A em relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato B em relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato C em relação à quantidade de eleitores; o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último o percentual correspondente de votos em branco em relação à quantidade de eleitores.  -->
+    <script>
+        let candidatoA = {
+            nulos: prompt("Digite a quantidade de votos nulos do candidato A"),
+            branco: prompt("Digite a quantidade de votos em branco do candidato A"),
+            validos: prompt("Digite a quantidade de votos válidos do candidato A")
+        };
+        let votosNulosA = candidatoA.nulos;
+        votosNulosA = parseInt(votosNulosA);
+        
+        let votosBrancosA = candidatoA.branco;
+        votosBrancosA = parseInt(votosBrancosA);
+
+        let votosValidosA = candidatoA.validos;
+        votosValidosA = parseInt(votosValidosA);
+        
+        let candidatoB = {
+            nulos: prompt("Digite a quantidade de votos nulos do candidato B"),
+            branco: prompt("Digite a quantidade de votos em branco do candidato B"),
+            validos: prompt("Digite a quantidade de votos válidos do candidato B")
+        };
+        let votosNulosB = candidatoB.nulos;
+        votosNulosB = parseInt(votosNulosB);
+
+        let votosBrancosB = candidatoB.branco;
+        votosBrancosB = parseInt(votosBrancosB);
+
+        let votosValidosB = candidatoB.validos;
+        votosValidosB = parseInt(votosValidosB);
+
+        let candidatoC = {
+            nulos: prompt("Digite a quantidade de votos nulos do candidato C"),
+            branco: prompt("Digite a quantidade de votos em branco do candidato C"),
+            validos: prompt("Digite a quantidade de votos válidos do candidato C")
+        };
+        let votosNulosC = candidatoC.nulos;
+        votosNulosC = parseInt(votosNulosC);
+
+        let votosBrancosC = candidatoC.branco;
+        votosBrancosC = parseInt(votosBrancosC);
+
+        let votosValidosC = candidatoC.validos;
+        votosValidosC = parseInt(votosValidosC);
+
+        let totalEleitores = votosNulosA + votosBrancosA + votosValidosA + votosNulosB + votosBrancosB + votosValidosB + votosNulosC +  votosBrancosC + votosValidosC;
+
+        let totalVotosValidos = votosValidosA + votosValidosB + votosValidosC;
+
+        let percentualVotosValidos =  totalVotosValidos * 100 / totalEleitores;
+
+        percentualVotosValidosA = votosValidosA * 100 / totalEleitores;
+
+        percentualVotosValidosB = votosValidosB * 100 / totalEleitores;
+
+        percentualVotosValidosC = votosValidosC * 100 / totalEleitores;
+
+        alert("O número total de eleitores corresponde a: "+ totalEleitores + " e o percentual de votos válidos com relação ao total de eleitores corresponde a: " + percentualVotosValidos.toFixed(2) + "%");
+
+        alert("O percentual correspondente de votos válidos do candidato A em relação à quantidade de eleitores é: " + percentualVotosValidosA.toFixed(2) + "%");
+
+        alert("O percentual correspondente de votos válidos do candidato B em relação à quantidade de eleitores é: " + percentualVotosValidosB.toFixed(2) + "%");
+        
+        alert("O percentual correspondente de votos válidos do candidato C em relação à quantidade de eleitores é: " + percentualVotosValidosC.toFixed(2) + "%");
+
+        let TotalVotosNulos =  votosNulosA  + votosNulosB + votosNulosC;
+
+        let percentualVotosNulos = TotalVotosNulos * 100 / totalEleitores; 
+
+        let TotalVotosBrancos =  votosBrancosA  + votosBrancosB + votosBrancosC;
+
+        let percentualVotosBrancos = TotalVotosBrancos* 100 / totalEleitores; 
+
+        alert("O percentual de votos nulos com relação ao total de eleitores corresponde a: " + percentualVotosNulos.toFixed(2) + "%." + "E o percentual de votos em branco com relação ao total de eleitores corresponde a: " + percentualVotosBrancos.toFixed(2) + "%");
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Lógica de Programação com Javascript</title>
+</head>
+
+<body>
+    <!-- Elaborar um programa de computador que efetue a leitura de quatro valores inteiros (variáveis A, B, C e D). Ao final o programa deve apresentar o resultado do produto (variável P) do primeiro com o terceiro valor, e o resultado da soma (variável S) do segundo com o quarto valor.  -->
+    <script>
+        let a = prompt("Digite um valor");
+        a = parseInt(a);
+
+        let b = prompt("Digite outro valor");
+        b = parseInt(b);
+
+        let c = prompt("Digite mais um valor");
+        c = parseInt(c);
+
+        let d = prompt("Digite mais um valor");
+        d = parseInt(d);
+
+        let p = a * c;
+
+        let s = b + d;
+
+        alert(`${"O produto do primeiro e o terceiro valor corresponde a:"} ${p} ${"e o resultado da soma do segundo com o quarto valor corresponde a:"} ${s}`);
+    </script>
+</body>
+</html>

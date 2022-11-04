@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Lógica de Programação com Javascript</title>
+</head>
+<body>
+    <!-- Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, utilizando a fórmula PRESTACAO=VALOR+(VALOR*TAXA/100) *TEMPO).  -->
+    <script>
+        let prestacao = prompt("Digite o valor da prestação em atraso")
+        prestacao = parseInt(prestacao);
+
+        let taxa = prompt("Digite a porcentagem de juros diária")
+        taxa = parseInt(taxa);
+
+        let tempo = prompt("Há quantos dias que a prestação está em atraso?")
+        tempo = parseInt(tempo);
+
+        let valordaprestacaoatual = (prestacao * taxa / 100) * tempo;
+
+        let valorfinal = valordaprestacaoatual + prestacao;
+        
+        alert(`${"A prestação atual passará de:"} ${prestacao.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} ${"para:"} ${valorfinal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`);
+
+    </script>
+</body>
+</html>

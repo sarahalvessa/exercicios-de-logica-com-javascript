@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Lógica de Programação com Javascript</title>
+</head>
+<body>
+    <!-- Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.   -->
+    <script>
+        let a = prompt("Digite sua idade em anos");
+        parseFloat(a);
+        a = a * 365;
+        let m = prompt("Digite quantos meses você tem");
+        parseFloat(m);
+        m = m * 30;
+        let d = prompt("Digite quantos dias você tem");
+        let newd = parseFloat(d);
+
+        alert(`${"Você já viveu:"} ${ a + m + newd} ${"dias"}`);
+    </script>
+</body>
+</html>
